@@ -1,0 +1,16 @@
+<%-include('/templates/header.ejs')%>
+
+<h1>articles</h1>
+
+<ul>
+
+<% for (const post of posts) {%>
+ <li>
+    <%=post.title%> (<%=post.category%>)
+        </li>
+<%}%>
+   
+</ul>
+
+
+<%-include('/templates/footer.ejs')%>
